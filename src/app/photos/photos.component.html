@@ -1,0 +1,13 @@
+<div style="margin: 20px">
+    <div id="carousel" class="centered text-center" style="margin: auto; max-height: 600px; max-width: 800px; ">
+        <ngb-carousel >
+          <div *ngFor="let photo of photoData">
+                    <ng-template ngbSlide  >
+                      <img [src]="photo.src" alt="Pic" style="width:100%;">                
+                    </ng-template>
+              </div>
+        </ngb-carousel>
+    </div>
+</div>
+
+

@@ -1,0 +1,9 @@
+
+<div id="navBarContainer" class="container" style="width:100%">
+  <ul class="nav nav-pills nav-justified" >
+
+      <li *ngFor="let nav of navData" class="nav-item">
+          <a class="nav-link" routerLink={{nav.id}}>{{nav.display}}</a>
+      </li>   
+  </ul>  
+</div>
