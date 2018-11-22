@@ -13,7 +13,7 @@ export class NavBarComponent implements OnInit {
   }
 
   navData = [
-    {id: "tour", display: "TOUR"},
+    {id: "show", display: "SHOWS"},
     {id: "listen", display: "LISTEN"},
     {id: "watch", display: "WATCH"},
     {id: "photos", display: "PHOTOS"},

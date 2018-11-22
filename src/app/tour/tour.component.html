@@ -1,4 +1,4 @@
-<div style="margin-bottom: 20px">
+<div class="resizing-margin" *ngIf="hasTour">
     <table class="table table-dark centered text-center" style="width:70%; margin:auto">
         <thead>
           <tr>
@@ -16,4 +16,60 @@
         </tbody>
       </table>
 </div>
+
+
+<div class="resizing-margin">
+    <div class="centered text-center" style="margin: auto; max-height: 600px; max-width: 800px;">
+       
+<div id="contactContainer">
+    <div>
+        <p class="app-wide-text">
+            For information regarding upcoming shows, join our mailing list!
+        </p>
+    </div>
+    
+    <div id="subscribeForm">
+        <form #emailForm = "ngForm" (ngSubmit)="submit(emailForm)">
+            
+               <div class="form-group centered text-center">
+                    <div style="width:50%;margin:auto">
+                        <div class="row">
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                style="width:300px"
+                                id="email"
+                                name="email"
+                                placeholder="Enter email address."
+                                required
+                                ngModel
+                                #email="ngModel"
+                                required
+                                >
+                                <button class="btn btn-primary" [disabled]="emailForm.invalid">Subscribe</button>
+                        </div>    
+                        
+                    </div>                 
+               </div>
+               <div class="alert alert-danger" style="width:50%;margin:auto" *ngIf="email.touched && email.invalid">Email is required.</div>
+               <div *ngIf="formSubmitted">
+                    <div class="alert alert-success" style="width:50%;margin:auto" *ngIf="successfulPOSTRequest">
+                    <p>Thank you for subscribing!</p>
+                    </div>
+                    <div class="alert alert-danger" style="width:50%;margin:auto" *ngIf="!successfulPOSTRequest">
+                    <p>An error occured. Please try again later.</p>
+                    </div>
+               </div>
+               
+
+        </form>
+    </div>
+</div>
+
+    </div>
+  </div>
+  
+  
+
+
 

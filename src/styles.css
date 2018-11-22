@@ -1,5 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
+
 html, body {
     height: 100%;
     margin: 0;
@@ -8,14 +9,16 @@ html, body {
 
 
 body { 
-    /* background-image: url("assets/pictures/background-gray.jpg"); */
-    background-size:cover;
-    background-color:gray;
+    background: url("assets/pictures/srv_background3.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .nav-link{
     font-weight: bold;
-    color: black;
+    color: gainsboro;
 
 }
 
@@ -24,8 +27,10 @@ body {
 }
 
 .nav-pills>li>a:hover {
-	background-color: white;
+    background-color:black;
+    border: #fff 10px;
 }
+
 .nav-pills .open>a, .nav-pills .open>a:active, .nav-pills .open>a:focus{
 	background-color:white;
 }
@@ -38,3 +43,55 @@ body {
     color: #fff;
     background-color: red
 }
+
+
+.container{
+    width: 100%;
+}
+
+.resizing-margin{
+    margin-right:10px; 
+    margin-left:10px
+}
+
+.app-wide-text{
+    color: #fff;
+}
+
+
+@font-face {
+    font-family: logoFont;
+    src: url("assets/fonts/Attentica.ttf");
+
+}
+
+.logoFont{
+    font-family: logoFont;    
+    color: gainsboro; 
+    font-size: 500%;  
+}
+
+.menuFont{
+    font-family: logoFont;    
+    color: gainsboro; 
+    font-size: 200%;
+}
+
+.table{
+    background: rgba(122, 130, 136, -0.8)!important
+}
+
+
+.wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -80px;
+  }
+
+  .footer,
+  .push {
+    height: 80px;
+}
+

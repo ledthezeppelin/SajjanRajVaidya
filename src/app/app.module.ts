@@ -12,10 +12,13 @@ import { WatchComponent } from './watch/watch.component';
 import { AboutComponent } from './about/about.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PhotosComponent } from './photos/photos.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { LogoComponent } from './logo/logo.component';
+import { FormsModule } from '@angular/forms' 
+import { HttpClientModule } from '@angular/common/http';
+import { MusicComponent } from './music/music.component';
 
 @NgModule({
   declarations: [
@@ -30,19 +33,23 @@ import { ContactComponent } from './contact/contact.component';
     LandingPageComponent,
     PhotosComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    LogoComponent,
+    MusicComponent
     
   ],
   imports: [
     BrowserModule,
     NgbModule,
+    FormsModule,
+    HttpClientModule,    
     RouterModule.forRoot([
       {
         path: '',
         component: TourComponent
       },
       {
-        path: 'tour',
+        path: 'show',
         component: TourComponent
       },
       {
