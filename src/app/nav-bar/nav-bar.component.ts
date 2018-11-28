@@ -14,8 +14,9 @@ export class NavBarComponent implements OnInit {
 
   navData = [
     {id: "show", display: "SHOWS"},
-    {id: "listen", display: "LISTEN"},
-    {id: "watch", display: "WATCH"},
+    {id: "music", display: "MUSIC"},
+    //{id: "listen", display: "LISTEN"},
+    //{id: "watch", display: "WATCH"},
     {id: "photos", display: "PHOTOS"},
     {id: "about", display: "ABOUT"},
     {id: "contact", display: "CONTACT"}

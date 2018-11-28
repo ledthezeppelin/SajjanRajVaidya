@@ -3,8 +3,12 @@
         <ngb-carousel >
           <div *ngFor="let photo of photoData">
                     <ng-template ngbSlide  >
-                      <img [src]="photo.src" alt="Pic" style="width:100%;">                
-                    </ng-template>
+                      <img [src]="photo.src" alt="Pic" style="width:100%;">     
+                      <div class="carousel-caption">
+                          <h3>{{photo.caption.title}}</h3>
+                          <p>{{photo.caption.location}}, {{photo.caption.date}} </p>
+                      </div>
+                    </ng-template>                   
               </div>
         </ngb-carousel>
     </div>

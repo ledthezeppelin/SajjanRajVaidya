@@ -71,6 +71,10 @@ import { MusicComponent } from './music/music.component';
       {
         path: 'contact',
         component: ContactComponent
+      },
+      {
+        path: 'music',
+        component: MusicComponent
       }
     ])
 

@@ -1,3 +1,4 @@
+import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  contactUsFormSubmitted: boolean = false;
+  successfulEmailPOSTRequest: boolean = true;
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
   }
 
- 
-
-
+  submit(contactUsForm){
+   // this.successfulEmailPOSTRequest = this.dataService.makePostRequestToSendEmail(contactUsForm);
+    this.contactUsFormSubmitted = true;
+  }
 }

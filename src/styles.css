@@ -95,3 +95,17 @@ body {
     height: 80px;
 }
 
+.centeredDiv{
+    width:100%; margin:auto;
+}
+
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+.Site-content {
+    flex: 1;
+}

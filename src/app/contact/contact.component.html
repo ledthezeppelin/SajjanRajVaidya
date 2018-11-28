@@ -1,1 +1,77 @@
-<p>Contact page</p>
+<div class="container jumbotron" style="width:40%; min-width: 290px">
+    <form #contactUsForm = "ngForm" (ngSubmit)="submit(contactUsForm)">
+        <h3>Get in touch with us!</h3>
+        <div>
+            <div class="row">
+                    <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" style="width:70px">Name</span>
+                            </div>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="contactName" 
+                            name="contactName"
+                            required
+                            ngModel
+                            #contactName="ngModel"
+                            >
+                    </div>
+                    <div class="alert alert-danger" style="width:100%;margin-top:5px" *ngIf="contactName.touched && contactName.invalid">Your name is required.</div>
+
+            </div>
+            <br>
+            <div class="row">
+                    <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" style="width:70px">Email</span>
+                            </div>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="contactEmail" 
+                            name="contactEmail"
+                            required
+                            ngModel
+                            #contactEmail="ngModel"
+                            >
+                    </div>
+                    <div class="alert alert-danger" style="width:100%;margin-top:5px" *ngIf="contactEmail.touched && contactEmail.invalid">Your email is required.</div>
+            </div>
+            <br>
+            <div class="row">
+                    <div class="input-group">
+                            <textarea 
+                            style="height:300px" 
+                            class="form-control" 
+                            id="contactMessage" 
+                            name="contactMessage"
+                            placeholder="Message" 
+                            required
+                            ngModel
+                            #contactMessage="ngModel"
+                            rows="1"
+                            cols="50"
+                            ></textarea>
+                    </div>
+                    <div class="alert alert-danger" style="width:100%;margin-top:5px" *ngIf="contactMessage.touched && contactMessage.invalid">Please enter a message.</div>
+
+            </div>
+            <br>
+            <div class="row">
+                    <div class="input-group">
+                            <button class="btn btn-primary" [disabled]="contactUsForm.invalid" style="width:100%">Submit</button>
+                    </div>
+            </div>
+            <br>
+            <div class="row text-center" *ngIf="contactUsFormSubmitted">
+                    <div class="alert alert-success" style="width:100%;margin:auto" *ngIf="successfulEmailPOSTRequest">
+                    <p>Thank you for reaching out to us! We will be in touch shortly.</p>
+                    </div>
+                    <div class="alert alert-danger" style="width:100%;margin:auto" *ngIf="!successfulEmailPOSTRequest">
+                    <p>An error occured. Please try again later.</p>
+                    </div>
+            </div>
+        </div>
+    </form>
+</div>

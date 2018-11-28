@@ -25,10 +25,10 @@ export class TourComponent implements OnInit {
   ];
 
   submit(emailForm){
-    console.log(emailForm);
-    console.log(emailForm.value);
     this.successfulPOSTRequest = this.service.makePostRequest(emailForm);
-    this.formSubmitted = true;
+    if(this.successfulPOSTRequest){
+      this.formSubmitted = true;
+    }
   }
 
 
