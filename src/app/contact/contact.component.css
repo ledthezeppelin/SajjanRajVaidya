@@ -1,3 +1,33 @@
 .form-control.ng-touched.ng-invalid{
     border:2px solid red;
 }
+
+
+.transParentSpan{
+    background: transparent; 
+    color: gainsboro;
+    font-family: logoFont;   
+    height:38px;
+    font-size: 2rem;
+}
+
+.alert{
+    font-family: logoFont;   
+    font-size: 2rem;
+    height:50px;
+    width:100%;
+    margin:auto;
+    margin-top:5px;
+    text-align: center;
+}
+
+
+#contactContainer p{
+    margin-top:-12px;
+}
+
+#contactContainer h3, label{
+    color: gainsboro;
+    font-family: logoFont;  
+}
+

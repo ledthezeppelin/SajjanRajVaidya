@@ -1,0 +1,27 @@
+#teamList {
+    display:inline-block;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    margin:10px;
+}
+
+
+.circle:hover{
+    outline: none;
+    border-color: #f1f2f3;
+    box-shadow: 0 0 40px lightskyblue;
+}
+
+.modal-header, .modal-body, .modal-footer, span{
+    background: #292b2c;
+    color: white;
+}
+
+
+

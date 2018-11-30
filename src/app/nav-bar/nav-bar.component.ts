@@ -13,12 +13,14 @@ export class NavBarComponent implements OnInit {
   }
 
   navData = [
+    {id: "home", display: "HOME"},
     {id: "show", display: "SHOWS"},
     {id: "music", display: "MUSIC"},
     //{id: "listen", display: "LISTEN"},
     //{id: "watch", display: "WATCH"},
     {id: "photos", display: "PHOTOS"},
     {id: "about", display: "ABOUT"},
+    {id: "team", display: "TEAM"},
     {id: "contact", display: "CONTACT"}
 
   ];

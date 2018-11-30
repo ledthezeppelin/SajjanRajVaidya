@@ -82,19 +82,6 @@ body {
 }
 
 
-.wrapper {
-    min-height: 100%;
-  
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -80px;
-  }
-
-  .footer,
-  .push {
-    height: 80px;
-}
-
 .centeredDiv{
     width:100%; margin:auto;
 }

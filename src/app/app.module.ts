@@ -19,6 +19,8 @@ import { LogoComponent } from './logo/logo.component';
 import { FormsModule } from '@angular/forms' 
 import { HttpClientModule } from '@angular/common/http';
 import { MusicComponent } from './music/music.component';
+import { HomeComponent } from './home/home.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { MusicComponent } from './music/music.component';
     FooterComponent,
     ContactComponent,
     LogoComponent,
-    MusicComponent
+    MusicComponent,
+    HomeComponent,
+    TeamComponent
     
   ],
   imports: [
@@ -46,7 +50,11 @@ import { MusicComponent } from './music/music.component';
     RouterModule.forRoot([
       {
         path: '',
-        component: TourComponent
+        component: HomeComponent
+      },
+      {
+        path: 'home',
+        component: HomeComponent
       },
       {
         path: 'show',
@@ -75,6 +83,10 @@ import { MusicComponent } from './music/music.component';
       {
         path: 'music',
         component: MusicComponent
+      },
+      {
+        path: 'team',
+        component: TeamComponent
       }
     ])
 

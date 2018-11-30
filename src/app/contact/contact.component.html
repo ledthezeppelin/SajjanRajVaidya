@@ -1,11 +1,11 @@
-<div class="container jumbotron" style="width:40%; min-width: 290px">
+<div id="contactContainer" class="container" style="width:40%; min-width: 290px">
     <form #contactUsForm = "ngForm" (ngSubmit)="submit(contactUsForm)">
-        <h3>Get in touch with us!</h3>
+        <h3 style="text-align:center; font-size: 4rem;">Get in touch with us!</h3>
         <div>
             <div class="row">
                     <div class="input-group">
                             <div class="input-group-prepend">
-                              <span class="input-group-text" style="width:70px">Name</span>
+                              <span class="input-group-text transParentSpan" style="width:70px">Name</span>
                             </div>
                             <input 
                             type="text" 
@@ -17,14 +17,14 @@
                             #contactName="ngModel"
                             >
                     </div>
-                    <div class="alert alert-danger" style="width:100%;margin-top:5px" *ngIf="contactName.touched && contactName.invalid">Your name is required.</div>
+                    <div class="alert alert-danger" style="width:100%;margin-top:5px" *ngIf="contactName.touched && contactName.invalid"><p>Your name is required.</p></div>
 
             </div>
             <br>
             <div class="row">
                     <div class="input-group">
                             <div class="input-group-prepend">
-                              <span class="input-group-text" style="width:70px">Email</span>
+                              <span class="input-group-text transParentSpan" style="width:70px">Email</span>
                             </div>
                             <input 
                             type="text" 
@@ -36,7 +36,7 @@
                             #contactEmail="ngModel"
                             >
                     </div>
-                    <div class="alert alert-danger" style="width:100%;margin-top:5px" *ngIf="contactEmail.touched && contactEmail.invalid">Your email is required.</div>
+                    <div class="alert alert-danger" style="width:100%;margin-top:5px" *ngIf="contactEmail.touched && contactEmail.invalid"><p>Your email is required.</p></div>
             </div>
             <br>
             <div class="row">
@@ -54,13 +54,13 @@
                             cols="50"
                             ></textarea>
                     </div>
-                    <div class="alert alert-danger" style="width:100%;margin-top:5px" *ngIf="contactMessage.touched && contactMessage.invalid">Please enter a message.</div>
+                    <div class="alert alert-danger" style="width:100%;margin-top:5px" *ngIf="contactMessage.touched && contactMessage.invalid"><p>Please enter a message.</p></div>
 
             </div>
             <br>
             <div class="row">
                     <div class="input-group">
-                            <button class="btn btn-primary" [disabled]="contactUsForm.invalid" style="width:100%">Submit</button>
+                            <button class="btn btn-primary" [disabled]="contactUsForm.invalid" style="width:20%; min-width:75px; font-family: logoFont; font-size: 2rem; margin:auto">Submit</button>
                     </div>
             </div>
             <br>
