@@ -23,7 +23,7 @@
        
 <div id="contactContainer">
     <div>
-        <p class="app-wide-text">
+        <p class="app-wide-text customFont" style="font-size:2rem">
             For information regarding upcoming shows, join our mailing list!
         </p>
     </div>
@@ -36,8 +36,8 @@
                         <div class="row">
                                 <input 
                                 type="text" 
-                                class="form-control"
-                                style="width:300px"
+                                class="form-control customFont"
+                                style="width:300px; font-size:2rem"
                                 id="email"
                                 name="email"
                                 placeholder="Enter email address."
@@ -45,7 +45,9 @@
                                 ngModel
                                 #email="ngModel"                                
                                 >
-                                <button class="btn btn-primary" [disabled]="emailForm.invalid">Subscribe</button>
+                                <button class="btn btn-primary customFont" [disabled]="emailForm.invalid" style="font-size:2rem; height:39px">
+                                    <p style="margin-top:-10px">Subscribe</p>
+                                </button>
                         </div>    
                         
                     </div>                 
@@ -59,7 +61,6 @@
                     <p>An error occured. Please try again later.</p>
                     </div>
                </div>
-               
 
         </form>
     </div>

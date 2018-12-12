@@ -16,21 +16,8 @@
       </button>
     </div>
     <div class="modal-body">
-      <div class="row">
-            <div class="col-md-7">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-            <div class="col-md-5">
-                <img id="srvLogo" [src]="currentTeamObject.photoURL" style="width:185px; height:185px; padding:5px">
-            </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-            <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-        </div>
-      </div>
-     
+      <img id="srvLogo" [src]="currentTeamObject.photoURL" style="width:185px; height:185px; padding:5px; border-radius: 50%; float:right">
+      <p>{{currentTeamObject.description}}</p>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>

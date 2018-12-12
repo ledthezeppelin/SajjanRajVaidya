@@ -8,16 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  contactUsFormSubmitted: boolean = false;
-  successfulEmailPOSTRequest: boolean = true;
+  contactUsFormSubmitted: boolean = null;
+  successfulEmailPOSTRequest: boolean = null;
 
   constructor(private dataService: DataService) { }
-
   ngOnInit() {
   }
 
   submit(contactUsForm){
-   // this.successfulEmailPOSTRequest = this.dataService.makePostRequestToSendEmail(contactUsForm);
+    this.dataService.makePostRequestToSendEmail(contactUsForm)
+        .subscribe(data => {
+          console.log(data);
+
+          data['status'] == "success" ? this.successfulEmailPOSTRequest = true : this.successfulEmailPOSTRequest = false;
+        }, error => {
+          this.successfulEmailPOSTRequest = false;
+        });
     this.contactUsFormSubmitted = true;
+    contactUsForm.clear();
   }
 }

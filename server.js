@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var http = require('http');
 
 var bodyParser = require('body-parser');
 
@@ -7,6 +8,7 @@ var bodyParser = require('body-parser');
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
 var port = process.env.PORT || 8081;        // set our port
 var router = express.Router();
 
@@ -57,20 +59,52 @@ router.route('/email')
        
         transporter.sendMail(mailOptions, function (err, info) {
           if (err) {
-            console.log(err);
-            return ('Error while sending email' + err)
+            res.send({'status':'error'});
           }
           else {
-            console.log("Email sent");
-            return ('Email sent')
+            res.send({'status':'success'});
           }
         });
-        
+    });
+    
+router.route('/signup')
 
+.post(function(req, res) {
+  
+    var email = req.body.email;   
+    var subscriber = JSON.stringify({
+      "email_address": email, 
+      "status": "subscribed", 
     });
 
- 
+  var options = {
+    hostname: 'us19.api.mailchimp.com',
+    path: '/3.0/lists/822f3b77a5/members',
+    method: 'POST',
+    headers: {
+        'Authorization': 'randomUser 13b175c45ce5e3ee149688e8a0f317e2-us19',
+        'Content-Type': 'application/json',
+        'Content-Length': subscriber.length
+    }
+  }
+
+  const https = require('https');
 
 
+  var req = https.request(options, (res) => {
+    res.on('data', (d) => {
+      process.stdout.write(d);
+    });
+  });
 
- 
+  req.on('error', (e) => {
+    console.error(e);
+  });
+
+  req.write(subscriber);
+  req.end();
+  res.send({'status':'success'});
+
+});
+
+

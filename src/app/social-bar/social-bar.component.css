@@ -1,0 +1,17 @@
+#socialBar ul{
+    list-style: none;
+  }
+
+#socialBar li{
+    display: inline;
+    margin: 15px;
+}
+
+.circle {
+    border-radius: 28%;  
+}
+
+.social-icon:hover{
+    border-color: #f1f2f3;
+    box-shadow: 0 0 40px lightskyblue;
+}

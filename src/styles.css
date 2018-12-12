@@ -77,6 +77,10 @@ body {
     font-size: 200%;
 }
 
+.customFont{
+    font-family: logoFont;    
+    color: gainsboro; 
+}
 .table{
     background: rgba(122, 130, 136, -0.8)!important
 }
@@ -95,4 +99,9 @@ body {
   
 .Site-content {
     flex: 1;
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
 }

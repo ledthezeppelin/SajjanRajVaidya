@@ -13,9 +13,9 @@ export class TourComponent implements OnInit {
   ngOnInit() {
   }
 
-  hasTour: boolean = false;
-  successfulPOSTRequest: boolean = false;
-  formSubmitted: boolean = false;
+  hasTour: boolean = null;
+  successfulPOSTRequest: boolean = null;
+  formSubmitted: boolean = null;
 
   tourData=[
     {id:1, date:'2018-08-15', venue:"Melrose Ballroom", city:"New York, NY, USA"},
@@ -25,13 +25,15 @@ export class TourComponent implements OnInit {
   ];
 
   submit(emailForm){
-    this.successfulPOSTRequest = this.service.makePostRequest(emailForm);
-    if(this.successfulPOSTRequest){
-      this.formSubmitted = true;
-    }
+    this.service.makePostRequestToMailchimpSignUp(emailForm)
+        .subscribe(data => {
+          data['status'] == "success" ? this.successfulPOSTRequest = true : this.successfulPOSTRequest = false;
+         }, error => {
+          this.successfulPOSTRequest = false;
+        });
+    this.formSubmitted = true;
+    emailForm.clear();
   }
-
-
 }
 
 
