@@ -30,10 +30,10 @@ export class TeamComponent implements OnInit {
   + "I bring this perspective to make sure that we, as a team, adhere to our core values, and comply with our goals so that we can uphold our performance standards and authenticity, primarily with growth and development in mind. Being the only female in the team, I also bring the heart and feminine touch to our projects, creating more room for Sajjan to think creatively and critically. If you have any questions regarding booking information, please feel free to reach out to me at team@sajjanrajvaidya.com";
   
   teamMembers = [
-    {id:1, name: "Arogya Khadka", title: "Manager", description: this.arogyaDesc, photoURL: "/assets/team/arogya.jpg"},
-    {id:2, name: "Abhinav Bhatta", title: "Web Developer", description: this.abhinavDesc, photoURL: "/assets/team/abhinav.png"},
-    {id:3, name: "Sharif Shrestha", title: "Camera", description: this.sharifDesc, photoURL: "/assets/team/sharif.png"},
-    {id:4, name: "Nurbu Lama", title: "Video Editor", description: this.nurbuDesc, photoURL: "/assets/team/nurbu.png"}
+    {id:1, name: "Arogya Khadka \| Manager",  description: this.arogyaDesc, photoURL: "/assets/team/arogya.jpg"},
+    {id:2, name: "Abhinav Bhatta",  description: this.abhinavDesc, photoURL: "/assets/team/abhinav.png"},
+    {id:3, name: "Sharif Shrestha", description: this.sharifDesc, photoURL: "/assets/team/sharif.png"},
+    {id:4, name: "Nurbu Lama", description: this.nurbuDesc, photoURL: "/assets/team/nurbu.png"}
   ]
   
   showTeamInfo(content, info){

@@ -26,8 +26,27 @@
     margin-top:-12px;
 }
 
-#contactContainer h3, label{
+
+#contactContainer h4, h3, label{
     color: gainsboro;
     font-family: logoFont;  
 }
 
+@media (max-width: 994px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    h4{
+       font-size:1.75rem !important;
+    }
+
+    h3{
+        font-size:3rem !important;
+
+    }
+
+    .container{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+
+}

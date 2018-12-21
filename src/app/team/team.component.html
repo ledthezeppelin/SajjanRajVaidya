@@ -7,20 +7,21 @@
     </div>
 </div>
 
+
 <ng-template #content let-modal id="teamModal">
     <div class="modal-header">
-        <h4 class="modal-title">{{currentTeamObject.name}} ({{currentTeamObject.title}})</h4>
+        <h4 class="modal-title">{{currentTeamObject.name}}</h4>
 
       <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+
     <div class="modal-body">
-      <img id="srvLogo" [src]="currentTeamObject.photoURL" style="width:185px; height:185px; padding:5px; border-radius: 50%; float:right">
-      <p>{{currentTeamObject.description}}</p>
+      <img class="circleImage" [src]="currentTeamObject.photoURL" >
+      <p class="justifiedText">{{currentTeamObject.description}}</p>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
     </div>
   </ng-template>
-

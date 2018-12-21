@@ -1,0 +1,10 @@
+.table{
+    background: rgba(122, 130, 136, -0.8)!important
+}
+
+@media (max-width: 994px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    input{
+        width:245px !important;
+    }
+}

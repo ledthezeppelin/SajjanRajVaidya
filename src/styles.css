@@ -7,41 +7,12 @@ html, body {
 }
 
 
-
 body { 
     background: url("assets/pictures/srv_background3.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-.nav-link{
-    font-weight: bold;
-    color: gainsboro;
-
-}
-
-.nav-filter {
-	background-color:#444;
-}
-
-.nav-pills>li>a:hover {
-    background-color:black;
-    border: #fff 10px;
-}
-
-.nav-pills .open>a, .nav-pills .open>a:active, .nav-pills .open>a:focus{
-	background-color:white;
-}
-
-.nav-pills > .active > a, .nav-pills > .active > a:hover {
-    background-color: red;
-}
-
-.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
-    color: #fff;
-    background-color: red
 }
 
 
@@ -81,9 +52,6 @@ body {
     font-family: logoFont;    
     color: gainsboro; 
 }
-.table{
-    background: rgba(122, 130, 136, -0.8)!important
-}
 
 
 .centeredDiv{
@@ -105,3 +73,24 @@ body {
     margin-left: 0px;
     margin-right: 0px;
 }
+
+.justifiedText{
+    text-align: justify; 
+    text-justify: inter-word;
+}
+
+.shadowfilter {
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	
+}.shadowfilter:hover {
+	-webkit-filter: drop-shadow(0px 0px 18px rgba(24, 182, 255, 0.8));
+}
+
+
+mark {
+    background:rgba(255,255,255,0.1);
+        color: gainsboro;
+  }

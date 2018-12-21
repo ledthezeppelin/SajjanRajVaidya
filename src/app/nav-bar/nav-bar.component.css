@@ -1,0 +1,23 @@
+.container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+@media (max-width: 994px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    #navBar{
+       font-size:1.75rem !important;
+       text-align: center !important;
+    }
+    span{
+        padding:5px !important;
+    }
+
+}
+
+
+a{
+    text-decoration: none;
+    color:gainsboro;
+}

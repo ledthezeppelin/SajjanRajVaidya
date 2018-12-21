@@ -1,0 +1,17 @@
+#srvAboutImage{
+    width:25%; 
+    height:50%; 
+    padding:5px; 
+    border-radius: 15%; 
+    float:right;
+}
+
+
+@media (max-width: 994px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    #srvAboutImage{
+        width:50%; 
+        height:75%; 
+    }
+
+}

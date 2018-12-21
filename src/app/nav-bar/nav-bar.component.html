@@ -1,8 +1,7 @@
 
-<div id="navBarContainer" class="container" style="width:100%; font-size: 1.25rem;float:left">
-  <ul class="nav nav-pills nav-justified menuFont"  >
-      <li *ngFor="let nav of navData" class="nav-item">
-          <a class="nav-link" routerLink={{nav.id}}>{{nav.display}}</a>
-      </li>   
-  </ul>  
+<div id="navBar" class="container customFont" style="width:100%;float:left;font-size:2.75rem; ">
+    <span id="spanElement" *ngFor="let nav of navData"  style="display: inline-block; padding:25px">
+        <a class="customFont shadowfilter" routerLink={{nav.id}}>{{nav.display}}</a>
+    </span>   
 </div>
+
