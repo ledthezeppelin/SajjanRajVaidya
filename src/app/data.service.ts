@@ -11,8 +11,8 @@ export class DataService {
 
  
 
-  private mailchimpUrl: string = "http://localhost:8081/api/signup";
-  private expressEmailUrl:  string = "http://localhost:8081/api/email";
+  private mailchimpUrl: string = "https://www.sajjanrajvaidya.com/api/signup";
+  private expressEmailUrl:  string = "https://www.sajjanrajvaidya.com/api/email";
 
   makePostRequestToMailchimpSignUp(emailFormData): Observable<string>{
     return this.httpClient.post<string>(this.mailchimpUrl,

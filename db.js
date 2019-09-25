@@ -18,8 +18,8 @@ var db = new Promise(function(resolve, reject){
 	      // use `sql` connection as usual
 	      	connection = mysql.createConnection({
 	          host     : '127.0.0.1',
-	          user     : 'sajjxijv_avnvbhatta',
-	          password : 'Database2018!', 
+	          user     : '',
+	          password : '!', 
 	          database : 'VideoCandidates',
 	          stream: stream
 	        });
@@ -36,8 +36,8 @@ var db = new Promise(function(resolve, reject){
 	}).connect({
 	  host: 'server234.web-hosting.com',
 	  port: 21096,
-	  username: 'sajjxijv',
-	  password: 'oacDjowdch9T'
+	  username: '',
+	  password: ''
 	});
 });
 

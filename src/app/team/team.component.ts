@@ -15,8 +15,8 @@ export class TeamComponent implements OnInit {
   ngOnInit() {
   }
 
-  nurbuDesc = "My name is Nurbu Lama. I’m Nepali, but in live in New York City now.  Ever since I got my first camera I knew in an instant that Photography is my calling that will undoubtedly dive me insane someday. It is my passion, an output of my inner voice, the one thing that keeps me sane. "
-  +"I do not have a “methodology” or a sophisticated cameras per say, I let emotions lead the way and consider myself merely a muse to my emotions.I try to portray what is authentic to me rather to the relevancy of my final product. I photograph what I feel,and I feel what I photograph. I am also into photography for the way it shapes me.  "
+  nurbuDesc = "My name is Nurbu Lama. I’m Nepali, but I live in New York City now.  Ever since I got my first camera I knew in an instant that Photography is my calling that will undoubtedly dive me insane someday. It is my passion, an output of my inner voice, the one thing that keeps me sane. "
+  +"I do not have a “methodology” or a sophisticated cameras per say, I let emotions lead the way and consider myself merely a muse to my emotions.I try to portray what is authentic to me rather to the relevancy of my final product. I photograph what I feel, and I feel what I photograph. I am also into photography for the way it shapes me.  "
   +"I don’t strive for perfection but for the emotion it gives to me and others. I’ve been fortunate enough that this method has created pieces that has resonated with other people. "
   +"Also, fun fact: The way I first met Sajjan was almost as spontaneous as my art form. I’m glad that I accidentally ran into him at the restaurant -our first conversation being our shared love for art.";
   

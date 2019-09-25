@@ -48,6 +48,7 @@ import { TeamComponent } from './team/team.component';
     NgbModule,
     FormsModule,
     HttpClientModule,    
+    
     RouterModule.forRoot([
       {
         path: '',
@@ -70,7 +71,7 @@ import { TeamComponent } from './team/team.component';
         component: WatchComponent
       },
       {
-        path: 'photos',
+        path: 'media',
         component: PhotosComponent
       },
       {
@@ -89,7 +90,8 @@ import { TeamComponent } from './team/team.component';
         path: 'team',
         component: TeamComponent
       }
-    ])
+      
+    ], {useHash: true})
 
   ],
   providers: [DataService],

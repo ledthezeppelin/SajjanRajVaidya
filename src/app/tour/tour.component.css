@@ -4,7 +4,11 @@
 
 @media (max-width: 994px) {
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
-    input{
-        width:245px !important;
+    .alert, input{
+        width:300px !important;
+        margin:auto !important;
+        display:inherit !important;
+        ;
     }
 }
+

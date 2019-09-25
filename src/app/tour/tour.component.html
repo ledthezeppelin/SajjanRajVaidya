@@ -46,14 +46,14 @@
                 </div>  
                 
                                
-               
+        
                <div class="alert alert-danger" style="width:100%;margin:auto" *ngIf="email.touched && email.invalid">Email is required.</div>
                <div *ngIf="formSubmitted">
                     <div class="alert alert-success" style="width:100%;margin:auto" *ngIf="successfulPOSTRequest">
                     <p>Thank you for subscribing!</p>
                     </div>
-                    <div class="alert alert-danger" style="width:100%;margin:auto" *ngIf="!successfulPOSTRequest">
-                    <p>An error occured. Please try again later.</p>
+                    <div class="alert alert-warning" style="width:100%;margin:auto" *ngIf="!successfulPOSTRequest">
+                    <p>Please Wait.</p>
                     </div>
                </div>
 

@@ -20,8 +20,8 @@ var transporter = nodemailer.createTransport({
    port: 465,
    secure: true, // true for 465, false for other ports
    auth: {
-     user: 'admin@sajjanrajvaidya.com', // your domain email address
-     pass: 'SRVadmin2018^' // your password
+     user: '', // your domain email address
+     pass: '' // your password
    }
  });
 
@@ -79,10 +79,10 @@ router.route('/signup')
 
   var options = {
     hostname: 'us19.api.mailchimp.com',
-    path: '/3.0/lists/822f3b77a5/members',
+    path: '',
     method: 'POST',
     headers: {
-        'Authorization': 'randomUser 13b175c45ce5e3ee149688e8a0f317e2-us19',
+        'Authorization': 'randomUser-us19',
         'Content-Type': 'application/json',
         'Content-Length': subscriber.length
     }

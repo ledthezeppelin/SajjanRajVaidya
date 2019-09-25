@@ -18,7 +18,7 @@ export class NavBarComponent implements OnInit {
     {id: "music", display: "MUSIC"},
     //{id: "listen", display: "LISTEN"},
     //{id: "watch", display: "WATCH"},
-    {id: "photos", display: "PHOTOS"},
+    {id: "media", display: "MEDIA"},
     {id: "about", display: "ABOUT"},
     {id: "team", display: "TEAM"},
     {id: "contact", display: "CONTACT"}

@@ -1,16 +1,8 @@
 
-<div id="socialBar" class="container" style="width:100%;float:right">
-    <div class="row">
-        <img id="srvLogo" src="assets/pictures/srvLogoTransparent.png" 
-        style="filter: invert(100%); width:65%; min-width: 230px; max-width: 375px;height:50%; transform: rotate(3deg); margin:auto ">
-      <div id="socialBarContainer" style="margin:auto; min-width: 294px; padding: 50px; margin-bottom: 32px;">
-          
-              <span *ngFor="let social of socialData">
-                <a  href="{{social.url}}" target="_blank"><img class="social-icon shadowfilter" [src]="social.iconImage" style="height:32px; width:32px;margin:5px"></a>
-              </span>    
-           
-      </div>
-      
-    </div>
-  </div>
+<div id="socialBar" class="container customFont" style="padding-top:35px; text-align: center" >
+  <span *ngFor="let social of socialData">
+      <a  href="{{social.url}}" target="_blank"><img class="social-icon shadowfilter" alt="{{social.imgAlt}}" [src]="social.iconImage" style="height:32px; width:32px;margin-left:25px"></a>
+  </span>  
+</div>
   
+

@@ -16,6 +16,14 @@
         padding: 0px !important; 
         margin-bottom: 0px !important;
     }
+
+    #socialBar{
+        padding: 0px !important; 
+    }
+
+    .social-icon{
+        margin-left: 10px !important;
+    }
    
 }
 
